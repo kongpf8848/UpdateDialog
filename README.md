@@ -9,4 +9,4 @@
 
 | 叮咚买菜 | 火币 |  |
 |:-:|:-:|:-:|
-|![image](https://github.com/kongpf8848/UpdateDialog/blob/master/screenshots/dialog_dingdong.png) | ![image](https://github.com/kongpf8848/UpdateDialog/blob/master/screenshots/dilaog_huobi.png) | |
+|![image](https://github.com/kongpf8848/UpdateDialog/blob/master/screenshots/dialog_dingdong.png) | ![image](https://github.com/kongpf8848/UpdateDialog/blob/master/screenshots/dialog_huobi.png) | |
