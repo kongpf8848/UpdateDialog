@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_version"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/shape_solid_white_r11"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="90dp"
+            android:background="@mipmap/ic_pdj_version_bg"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12.0dip"
+                android:text="发现新版本"
+                android:textColor="@color/white"
+                android:textSize="26sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp">
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:id="@+id/tv_version_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18.0dip"
+                    android:layout_marginRight="16.0dip"
+                    android:textColor="#ff030303"
+                    android:textSize="15.0sp"
+                    android:text="上京东到家，足不出户万千好物，1小时送到家！\n
+1、活动页优惠券打标优化，展示更清晰~\n
+2、会员任务进度提示，多买更优惠~\n
+3、还有更多细节优化，只为更好的你~"
+                    />
+            </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom|center"
+            android:paddingTop="10.0dip"
+            android:paddingBottom="10.0dip"
+            android:weightSum="1.0">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="30.0dip"
+                android:layout_marginRight="30.0dip"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_ignore"
+                    android:layout_width="0.0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/shape_solid_white_r5"
+                    android:text="暂不升级"
+                    android:textColor="#ff47b34f"
+                    android:textSize="16.0sp"
+                   />
+
+                <Button
+                    android:id="@+id/btn_update"
+                    android:layout_width="0.0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/shape_solid_47b34f_r5"
+                    android:text="立即下载"
+                    android:textColor="@color/white"
+                    android:textSize="16.0sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="104.0dip"
+        android:layout_height="108.0dip"
+        android:layout_marginLeft="10.0dip"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_pdj_version_logo" />
+
+</RelativeLayout>

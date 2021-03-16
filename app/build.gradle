@@ -1,0 +1,53 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+android {
+    compileSdkVersion Config.compileSdkVersion
+    buildToolsVersion Config.buildToolsVersion
+
+    defaultConfig {
+        applicationId Config.applicationId
+        minSdkVersion Config.minSdkVersion
+        targetSdkVersion Config.targetSdkVersion
+        versionCode Config.versionCode
+        versionName Config.versionName
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    testImplementation BuildDependencies.junit
+
+    api AndroidX.appCompat
+    api AndroidX.multidex
+    api AndroidX.material
+    api AndroidX.recyclerview
+    api AndroidX.preference
+    api AndroidX.cardview
+    api AndroidX.gridlayout
+    api AndroidX.annotationX
+    api AndroidX.constraintlayout
+    api AndroidX.paging
+    api AndroidX.work
+    api AndroidX.core
+    api AndroidX.coreKtx
+    api AndroidX.coordinatorlayout
+    api BuildDependencies.kotlinStdlibJdk7
+    api BuildDependencies.kotlinxCoroutinesAndroid
+    api BuildDependencies.glide
+    kapt BuildDependencies.glideCompiler
+    api BuildDependencies.glideIntegration
+    api BuildDependencies.baseQuickAdapter
+    api BuildDependencies.commonHelper
+    api BuildDependencies.roundCorners
+
+}

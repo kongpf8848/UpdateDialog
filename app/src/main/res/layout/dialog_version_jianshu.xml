@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_top"
+        android:layout_marginTop="-95.0dip"
+        android:background="@drawable/shape_solid_white_r3"
+        android:orientation="vertical"
+        android:paddingTop="100dp">
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13.0dip"
+            android:paddingLeft="23.0dip"
+            android:paddingRight="23.0dip">
+
+            <com.github.kongpf8848.updatedialog.ui.views.MaxHeightScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scrollbars="none"
+                app:maxHeight="200.0dip">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/content_text"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:text="- 文集升级连载支持人民币支付\n- 推荐内容更加丰富\n- 修复一些bug"
+                        android:textColor="#ff333333" />
+                </LinearLayout>
+            </com.github.kongpf8848.updatedialog.ui.views.MaxHeightScrollView>
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/chx_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23.0dip"
+            android:layout_marginTop="9.0dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="6.0dip">
+
+            <CheckBox
+                android:id="@+id/chx"
+                android:layout_width="12.0dip"
+                android:layout_height="12.0dip"
+                android:button="@drawable/checkbox"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:text="忽略此版本"
+                android:textColor="#999999"
+                android:textSize="14.0sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/tv_confirm"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="取消"
+                android:textColor="#999999"
+                android:textSize="14.0sp" />
+
+            <TextView
+                android:id="@+id/tv_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="立即下载"
+                android:textColor="#ffea6e5a"
+                android:textSize="14.0sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/app_update_dialog_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="95.0dip"
+            android:text="发现新版本"
+            android:textColor="@color/white"
+            android:textSize="20.0sp" />
+
+        <TextView
+            android:id="@+id/tv_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10.0dip"
+            android:text="最新版本（6.2.0)"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</RelativeLayout>

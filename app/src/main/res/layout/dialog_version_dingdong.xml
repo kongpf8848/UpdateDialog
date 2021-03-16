@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:background="@mipmap/ic_update_top" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="21.0dip" android:layout_marginTop="54.0dip" android:text="发现新版本" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@+id/tv_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="21.0dip" android:text="9.23.0" android:layout_below="@id/tv_name"  />
+        </RelativeLayout>
+        <ScrollView android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0sp" android:textColor="#333333" android:id="@+id/tv_upWords" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="21.0dip" android:layout_marginRight="21.0dip" android:maxHeight="250.0dip"
+                        android:text="-  分类页体验优化；\n-  提升了售后模块的易用性；\n-  发票开具增加信息确认弹窗；\n-  搜索列表增加推荐理由文案；"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+        <RelativeLayout android:background="@drawable/shape_white_bottom" android:paddingTop="30.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="13.0sp" android:textColor="#00CD66" android:id="@+id/tv_update" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="28.0dip" android:text="立即更新" android:layout_alignParentRight="true" />
+            <TextView android:textSize="13.0sp" android:textColor="#43CD80" android:id="@+id/tv_next_time" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="118.0dip" android:text="下次再说" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">UpdateDialog</string>
+
+    <string name="dialog_pdj">京东到家</string>
+    <string name="dialog_jianshu">简书</string>
+    <string name="dialog_csdn">CSDN</string>
+    <string name="dialog_dingdong">叮咚买菜</string>
+    <string name="dialog_huobi">火币</string>
+
+</resources>
