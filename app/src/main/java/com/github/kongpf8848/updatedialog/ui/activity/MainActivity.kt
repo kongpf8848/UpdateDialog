@@ -15,8 +15,11 @@ class MainActivity : AppCompatActivity() {
     companion object{
         const val SPAN_COUNT=3
     }
-    private val iconList= listOf(R.mipmap.icon_pdj, R.mipmap.icon_jianshu,R.mipmap.icon_csdn,R.mipmap.icon_dingdong,R.mipmap.icon_huobi,R.mipmap.icon_cloudmusic)
-    private val titleList= listOf(R.string.dialog_pdj, R.string.dialog_jianshu,R.string.dialog_csdn,R.string.dialog_dingdong,R.string.dialog_huobi,R.string.dialog_cloudmusic)
+    private val iconList= listOf(R.mipmap.icon_pdj, R.mipmap.icon_jianshu,R.mipmap.icon_csdn,
+        R.mipmap.icon_dingdong,R.mipmap.icon_huobi,R.mipmap.icon_cloudmusic,
+        R.mipmap.icon_wealth
+    )
+    private val titleList= listOf(R.string.dialog_pdj, R.string.dialog_jianshu,R.string.dialog_csdn,R.string.dialog_dingdong,R.string.dialog_huobi,R.string.dialog_cloudmusic,R.string.dialog_wealth)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -57,6 +60,9 @@ class MainActivity : AppCompatActivity() {
             }
             5->{
                 UpdateDialog_Cloudmusic(this).show()
+            }
+            6->{
+                UpdateDialog_Wealth(this).show()
             }
         }
     }
