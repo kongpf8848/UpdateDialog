@@ -1,6 +1,6 @@
 # UpdateDialog
 
-🚀🚀🚀高仿各大APP下载更新对话框,体验Dialog之美
+🚀🚀🚀高仿各大APP下载更新对话框，体验Dialog之美
 
 ## 截图
 | 京东到家 | 简书 | CSDN |
