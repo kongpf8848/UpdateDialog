@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/content_layout"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dip"
+        android:background="@drawable/shape_solid_white_r11">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="90.0dip"
+            android:layout_marginTop="40.0dip"
+            android:listSelector="@android:color/transparent"
+            android:text="发现更新1.4.7"
+            android:textColor="#ff2e2e2e"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="78dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="11dp"
+             />
+
+        <CheckBox
+            android:id="@+id/update_skip_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/recyclerview"
+            android:layout_marginLeft="14dp"
+            android:button="@drawable/small_checkbox_button_selector"
+            android:paddingLeft="5.0dip"
+            android:text="不再提示此信息"
+            android:textColor="#ff999999"
+            android:textSize="12.0sp" />
+
+        <LinearLayout
+            android:id="@+id/button_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/update_skip_cb"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:src="#ff999999" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="48.0dip">
+
+                <Button
+                    android:id="@+id/negativeButton"
+                    android:layout_width="0.0dip"
+                    android:layout_height="48.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/dialog_button_left_selector"
+                    android:minHeight="48dp"
+                    android:singleLine="true"
+                    android:textColor="#ffb9b9b9"
+                    android:textSize="16sp"
+                    android:text="暂不升级"
+                    />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="fill_parent"
+                    android:background="#ff999999" />
+
+                <Button
+                    android:id="@+id/positiveButton"
+                    android:layout_width="0.0dip"
+                    android:layout_height="48.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/dialog_button_right_selector"
+                    android:minHeight="48dp"
+                    android:singleLine="true"
+                    android:textColor="#ffffaf1a"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:text="马上升级"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:src="@mipmap/dialog_update_icon" />
+
+</FrameLayout>
