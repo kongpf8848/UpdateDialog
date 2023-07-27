@@ -1,11 +1,11 @@
 import org.gradle.api.JavaVersion
 
 object Config{
-    const val compileSdkVersion = 30
-    const val buildToolsVersion = "30.0.2"
+    const val compileSdkVersion = 33
+    const val buildToolsVersion = "33.0.2"
     const val applicationId="com.github.kongpf8848.updatedialog"
     const val minSdkVersion = 21
-    const val targetSdkVersion = 30
+    const val targetSdkVersion = 33
     val sourceCompatibilityVersion = JavaVersion.VERSION_1_8
     val targetCompatibilityVersion = JavaVersion.VERSION_1_8
     const val versionCode = 1
@@ -15,9 +15,9 @@ object Config{
 
 object Versions {
 
-    const val PLUGIN_GRADLE_VERSION="3.6.3"
+    const val PLUGIN_GRADLE_VERSION="8.0.2"
     const val PLUGIN_GMS_VERSION="3.1.1"
-    const val KOTLIN_VERSION = "1.3.60"
+    const val KOTLIN_VERSION = "1.7.10"
     //google-services
     const val GOOGLE_SERVICE = "4.3.4"
     const val FIREBASE_BOM = "26.2.0"

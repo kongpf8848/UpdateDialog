@@ -2,7 +2,10 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
+
 android {
+    namespace 'com.github.kongpf8848.updatedialog'
+
     compileSdkVersion Config.compileSdkVersion
     buildToolsVersion Config.buildToolsVersion
 
@@ -12,7 +15,6 @@ android {
         targetSdkVersion Config.targetSdkVersion
         versionCode Config.versionCode
         versionName Config.versionName
-
     }
 
     buildTypes {
@@ -21,6 +23,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
 }
 
 dependencies {
