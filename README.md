@@ -11,6 +11,6 @@
 |:-:|:-:|:-:|
 |![image](https://github.com/kongpf8848/UpdateDialog/blob/master/screenshots/dialog_pdj.jpg) | ![image](https://github.com/kongpf8848/UpdateDialog/blob/master/screenshots/dialog_bolo.jpg) | ![image](https://github.com/kongpf8848/UpdateDialog/blob/master/screenshots/dialog_cloudmusic.jpg)|
 
-| 蚂蚁财富 | 36氪 |   |
+| 蚂蚁财富 | 36氪 |  掘金 |
 |:-:|:-:|:-:|
-|![image](https://github.com/kongpf8848/UpdateDialog/blob/master/screenshots/dialog_wealth.jpg) |![image](https://github.com/kongpf8848/UpdateDialog/blob/master/screenshots/dialog_36kr.jpg) ||
+|![image](https://github.com/kongpf8848/UpdateDialog/blob/master/screenshots/dialog_wealth.jpg) |![image](https://github.com/kongpf8848/UpdateDialog/blob/master/screenshots/dialog_36kr.jpg) | ![image](https://github.com/kongpf8848/UpdateDialog/blob/master/screenshots/dialog_juejin.jpg)|
